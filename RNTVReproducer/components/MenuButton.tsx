@@ -38,7 +38,7 @@ export const MenuButton = (props: Props) => {
         <Pressable
             ref={buttonRef}
             // disabled={props?.focusable ? false : true}   // Only disables onPress. 
-            isTVSelectable={props?.focusable}               // AppleTV only. Disables ability to focus as expected.
+            // isTVSelectable={props?.focusable}               // AppleTV only. Disables ability to focus as expected.
             focusable={props?.focusable}                    // No effect on AppleTV or Android/Fire
             accessible={props?.focusable} // Should prevent AndroidTV when used with focusable.
             

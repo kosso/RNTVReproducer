@@ -9,6 +9,7 @@ import { ScreenOne } from './screens/ScreenOne'
 import { ScreenTwo } from './screens/ScreenTwo'
 import { GridScreen } from './screens/GridScreen'
 import { GridScreenExperiment } from './screens/GridScreenExperiment';
+import { FlatListShelves } from './screens/FlatlistShelves';
 // import { DetailScreen } from './screens/DetailScreen'
 
 
@@ -33,6 +34,7 @@ export default function App() {
 
           <Stack.Screen name='GridScreen' component={GridScreen} options={{ title: 'GridScreen', animation: 'fade_from_bottom', headerShown: false }} />
           <Stack.Screen name='GridScreenExperiment' component={GridScreenExperiment} options={{ title: 'GridScreen', animation: 'fade_from_bottom', headerShown: false }} />
+          <Stack.Screen name='FlatListShelves' component={FlatListShelves} options={{ title: 'FlatListShelves', animation: 'fade_from_bottom', headerShown: false }} />
 
           {/* <Stack.Screen name='DetailScreen' component={DetailScreen} options={{ title: 'DetailScreen', animation: 'fade_from_bottom', headerShown: false }} /> */}
         </Stack.Navigator>

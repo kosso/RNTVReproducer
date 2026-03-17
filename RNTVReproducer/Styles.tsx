@@ -10,6 +10,9 @@ export const scaleSize = (size: number): number => {
 
 export const ITEM_WIDTH = 300 * scaleModifier
 export const ITEM_HEIGHT = 180 * scaleModifier
+export const MENU_ITEM_WIDTH = 360 * scaleModifier
+export const MENU_ITEM_HEIGHT = 120 * scaleModifier
+
 
 export const isTVOS = Platform.isTVOS
 
@@ -97,5 +100,23 @@ export const styles = StyleSheet.create({
     grid: {
         borderWidth: 2 * scaleModifier,
         borderColor: 'red'
+    },
+    menuItem: {
+        width: MENU_ITEM_WIDTH,
+        height: MENU_ITEM_HEIGHT,
+        borderWidth: 4 * scaleModifier,
+        borderColor: '#999',
+        display: 'flex',
+        justifyContent: 'center',
+        alignItems: 'center',
+        marginBottom: 20 * scaleModifier
+    },
+    menuItemFocus: {
+        backgroundColor: 'orange'
+    },
+    menuItemPress: {
+        backgroundColor: 'red'
     }
+
+
 })
